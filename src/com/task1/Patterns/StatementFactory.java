@@ -1,7 +1,7 @@
-package Patterns;
+package com.task1.Patterns;
 
 import java.util.random.RandomGenerator;
-import Statement.*;
+import com.task1.Statement.*;
 
 public class StatementFactory {
     private static StatementFactory uniqueInstance;

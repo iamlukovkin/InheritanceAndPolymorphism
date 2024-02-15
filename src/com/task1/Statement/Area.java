@@ -1,4 +1,4 @@
-package Statement;
+package com.task1.Statement;
 
 public class Area extends Place {
     private Region mainRegion;

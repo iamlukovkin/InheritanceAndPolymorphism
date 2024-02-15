@@ -1,4 +1,4 @@
-package Statement;
+package com.task1.Statement;
 
 public class City extends Place {
     public City(String name, double area) {

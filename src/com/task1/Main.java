@@ -1,7 +1,9 @@
-import Patterns.StatementFactory;
-import Statement.Area;
-import Statement.Country;
-import Statement.Region;
+package com.task1;
+
+import com.task1.Patterns.StatementFactory;
+import com.task1.Statement.Area;
+import com.task1.Statement.Country;
+import com.task1.Statement.Region;
 
 public class Main {
     public static void main(String[] args) {
