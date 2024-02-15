@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6388691f-f837-4873-a264-e7b7bc137952" name="Changes" comment="Edit README.md">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/iamlukovkin/java/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/iamlukovkin/java/CountryManage/Area.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/iamlukovkin/java/CountryManage/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/iamlukovkin/java/CountryManage/Place.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/iamlukovkin/java/CountryManage/Region.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iamlukovkin/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iamlukovkin/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="6388691f-f837-4873-a264-e7b7bc137952" name="Changes" comment="Edit README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,6 +186,7 @@
       <workItem from="1707978095093" duration="356000" />
       <workItem from="1707978470181" duration="29000" />
       <workItem from="1707978504535" duration="38000" />
+      <workItem from="1707978627737" duration="132000" />
     </task>
     <task id="LOCAL-00001" summary="Init app">
       <option name="closed" value="true" />
@@ -216,6 +209,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init app" />
