@@ -1,7 +1,20 @@
 package com.iamlukovkin.java;
 
+import com.iamlukovkin.java.CountryManage.Area;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Country country = new Country(
+        "Россия",
+        new Area[]{
+            new Area(
+                "Санкт-Петербург",
+                new Region[]{
+                    new Region(
+                        "Северо-Запад",
+                    )
+                }
+            )
+        });
     }
 }
