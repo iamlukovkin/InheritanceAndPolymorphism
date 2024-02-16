@@ -1,9 +1,16 @@
 package com.task1.Statement;
 
 public class City extends Place {
+    private static int cityId = 0;
+
     public City(String name, double area) {
         super(name);
         setSquare(area);
+        cityId++;
+    }
+
+    public static int getCityId() {
+        return cityId;
     }
 
     public void setSquare(double area) {

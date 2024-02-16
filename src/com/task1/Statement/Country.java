@@ -30,8 +30,16 @@ public class Country extends Place {
         return capital;
     }
 
+    public void displayCapital() {
+        System.out.println("Столица: \n" + getCapital());
+    }
+
     public int getAreasCount() {
         return getAreas().length;
+    }
+
+    public void displayAreasCount() {
+        System.out.println("Количество областей: " + getAreasCount());
     }
 
     public void setCapital(City capital) {
@@ -53,5 +61,12 @@ public class Country extends Place {
             fullSquare += area.getSquare();
         }
         super.setSquare(fullSquare);
+    }
+
+    public void displayAreaCentres() {
+        System.out.println("Областные центры: ");
+        for (Area area : areas) {
+            area.displayAreaCenter();
+        }
     }
 }

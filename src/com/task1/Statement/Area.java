@@ -1,6 +1,7 @@
 package com.task1.Statement;
 
 public class Area extends Place {
+    private static int areaId = 0;
     private Region mainRegion;
     private Region[] includedRegions;
 
@@ -8,6 +9,11 @@ public class Area extends Place {
         super(name);
         setMainRegion(mainRegion);
         setIncludedRegions(includedRegions);
+        areaId++;
+    }
+
+    public static int getAreaId() {
+        return areaId;
     }
 
     public Region getMainRegion() {
@@ -47,5 +53,9 @@ public class Area extends Place {
             allArea += region.getSquare();
         }
         super.setSquare(allArea);
+    }
+
+    public void displayAreaCenter() {
+        System.out.println(getName() + " область - " + getMainRegion().toString());
     }
 }
