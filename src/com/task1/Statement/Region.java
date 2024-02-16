@@ -1,11 +1,18 @@
 package com.task1.Statement;
 
 public class Region extends Place {
+    private static int regionId = 0;
+
     private City[] cities;
 
     public Region(String name, City[] cities) {
         super(name);
         setCities(cities);
+        regionId++;
+    }
+
+    public static int getRegionId() {
+        return regionId;
     }
 
     private void setSquare() {

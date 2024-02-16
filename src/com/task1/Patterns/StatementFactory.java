@@ -20,7 +20,7 @@ public class StatementFactory {
     public Region makeRegion(String name, int count) {
         City[] cities = new City[count];
         for (int i = 1; i <= count; i++) {
-            cities[i - 1] = makeCity("Город " + i, RandomGenerator.getDefault().nextDouble((10 * count), (100 * count)));
+            cities[i - 1] = makeCity("Город " + City.getCityId(), RandomGenerator.getDefault().nextDouble((10 * count), (100 * count)));
         }
         return new Region(name, cities);
     }
@@ -28,7 +28,7 @@ public class StatementFactory {
     public Area makeArea(String name, int regionsCount) {
         Region[] regions = new Region[regionsCount];
         for (int i = 1; i <= regionsCount; i++) {
-            regions[i - 1] = makeRegion("№" + i, RandomGenerator.getDefault().nextInt(1, 10));
+            regions[i - 1] = makeRegion("№" + Region.getRegionId() + 1, RandomGenerator.getDefault().nextInt(1, 10));
         }
         return new Area(name, regions[RandomGenerator.getDefault().nextInt(0, regions.length)], regions);
     }
@@ -36,14 +36,14 @@ public class StatementFactory {
     public Area[] makeAreas(int count) {
         Area[] areas = new Area[count];
         for (int i = 0; i < count; i++) {
-            areas[i] = makeArea((i + 1) + "-ая", RandomGenerator.getDefault().nextInt(1, count));
+            areas[i] = makeArea((Area.getAreaId() + 1) + "-ая", RandomGenerator.getDefault().nextInt(1, count));
         }
         return areas;
     }
 
-    public Country makeCountry(String name) {
-        City countryCapital = makeCity(name, 10000);
+    public Country makeCountry(String capitalName, String countryName) {
+        City countryCapital = makeCity(capitalName, 100);
         Area[] countryAreas = makeAreas(10);
-        return new Country("Россия", countryCapital, countryAreas);
+        return new Country(countryName, countryCapital, countryAreas);
     }
 }

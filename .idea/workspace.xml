@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bccb4ba7-186e-4392-b80a-94214cbb7d32" name="Changes" comment="Using AbstractFactory pattern" />
+    <list default="true" id="bccb4ba7-186e-4392-b80a-94214cbb7d32" name="Changes" comment="Using AbstractFactory pattern">
+      <change afterPath="$PROJECT_DIR$/src/com/task2/Audio/AbstractAudio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/Audio/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/Audio/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/Audio/Track.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/Memory/AbstractMemory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/Memory/Disk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/Memory/Playlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/StudioFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Patterns/StatementFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Area.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Place.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Region.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Patterns/StatementFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Patterns/StatementFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Statement/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Statement/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Statement/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Statement/Region.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +38,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -50,23 +76,63 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.com.task1.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore_missing_gitignore": "true",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/iamlukovkin/java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.task1.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.task2.Main" />
+      <module name="InheritanceAndPolymorphism" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.task2.Audio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.task1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.task1.Main" />
+      <module name="InheritanceAndPolymorphism" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,6 +153,12 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.task1.Main" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -98,7 +170,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6388691f-f837-4873-a264-e7b7bc137952" name="Changes" comment="" />
+      <changelist id="bccb4ba7-186e-4392-b80a-94214cbb7d32" name="Changes" comment="Using AbstractFactory pattern" />
       <created>1707847341683</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -109,6 +181,8 @@
       <workItem from="1707978470181" duration="29000" />
       <workItem from="1707978504535" duration="38000" />
       <workItem from="1707978627737" duration="132000" />
+      <workItem from="1708048704016" duration="9522000" />
+      <workItem from="1708112770027" duration="764000" />
     </task>
     <task id="LOCAL-00001" summary="Init app">
       <option name="closed" value="true" />
