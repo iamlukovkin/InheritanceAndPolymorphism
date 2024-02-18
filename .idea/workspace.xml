@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bccb4ba7-186e-4392-b80a-94214cbb7d32" name="Changes" comment="refactor">
-      <change beforePath="$PROJECT_DIR$/src/com/task2/behavioral/PlaylistMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/behavioral/PlaylistMenu.java" afterDir="false" />
+    <list default="true" id="bccb4ba7-186e-4392-b80a-94214cbb7d32" name="Changes" comment="Code review">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/structural/Memory/Disk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/structural/Memory/Disk.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +164,7 @@
       <workItem from="1707978627737" duration="132000" />
       <workItem from="1708048704016" duration="9522000" />
       <workItem from="1708112770027" duration="2213000" />
-      <workItem from="1708248232306" duration="12969000" />
+      <workItem from="1708248232306" duration="13950000" />
     </task>
     <task id="LOCAL-00001" summary="Init app">
       <option name="closed" value="true" />
@@ -220,7 +222,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708262879430</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Working version">
+      <option name="closed" value="true" />
+      <created>1708263272147</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708263272147</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Code review">
+      <option name="closed" value="true" />
+      <created>1708263362883</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708263362883</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +262,8 @@
     <MESSAGE value="task2 refactor" />
     <MESSAGE value="task2 menu" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="Working version" />
+    <MESSAGE value="Code review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code review" />
   </component>
 </project>
