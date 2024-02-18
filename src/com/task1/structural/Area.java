@@ -1,4 +1,4 @@
-package com.task1.Statement;
+package com.task1.structural;
 
 public class Area extends Place {
     private static int areaId = 0;

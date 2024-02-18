@@ -1,7 +1,7 @@
 package com.task1;
 
-import com.task1.Patterns.StatementFactory;
-import com.task1.Statement.*;
+import com.task1.creational.StatementFactory;
+import com.task1.structural.Country;
 
 public class Main {
     public static void main(String[] args) {

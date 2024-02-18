@@ -1,4 +1,4 @@
-package com.task1.Statement;
+package com.task1.structural;
 
 abstract public class Place {
     private final String name;

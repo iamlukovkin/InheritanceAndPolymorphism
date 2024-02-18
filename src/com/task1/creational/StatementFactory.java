@@ -1,7 +1,11 @@
-package com.task1.Patterns;
+package com.task1.creational;
 
 import java.util.random.RandomGenerator;
-import com.task1.Statement.*;
+
+import com.task1.structural.Area;
+import com.task1.structural.City;
+import com.task1.structural.Country;
+import com.task1.structural.Region;
 
 public class StatementFactory {
     private static StatementFactory uniqueInstance;

@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bccb4ba7-186e-4392-b80a-94214cbb7d32" name="Changes" comment="Using AbstractFactory pattern">
-      <change afterPath="$PROJECT_DIR$/src/com/task2/Audio/AbstractAudio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/Audio/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/Audio/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/Audio/Track.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/Memory/AbstractMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/Memory/Disk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/Memory/Playlist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/StudioFactory.java" afterDir="false" />
+    <list default="true" id="bccb4ba7-186e-4392-b80a-94214cbb7d32" name="Changes" comment="task2 refactor">
+      <change afterPath="$PROJECT_DIR$/src/com/task2/behavioral/AppFunctions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/behavioral/MenuView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/creational/MemoryFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Patterns/StatementFactory.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Area.class" beforeDir="false" />
@@ -24,11 +18,13 @@
       <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Place.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Region.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Patterns/StatementFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Patterns/StatementFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Statement/Area.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Statement/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Statement/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Statement/Region.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Patterns/StatementFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/creational/StatementFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/structural/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/structural/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/structural/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/structural/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/structural/Region.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,16 +99,17 @@
       <recent name="$PROJECT_DIR$/src/com/iamlukovkin/java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.task2.structural" />
       <recent name="com" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.task1.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.task2.Main" />
       <module name="InheritanceAndPolymorphism" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.task2.Audio.*" />
+          <option name="PATTERN" value="com.task2.structural.Audio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.task1.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.com.task1.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +179,7 @@
       <workItem from="1707978504535" duration="38000" />
       <workItem from="1707978627737" duration="132000" />
       <workItem from="1708048704016" duration="9522000" />
-      <workItem from="1708112770027" duration="764000" />
+      <workItem from="1708112770027" duration="2213000" />
     </task>
     <task id="LOCAL-00001" summary="Init app">
       <option name="closed" value="true" />
@@ -200,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707848258937</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add display methods">
+      <option name="closed" value="true" />
+      <created>1708113674529</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708113674529</updated>
+    </task>
+    <task id="LOCAL-00004" summary="task2 refactor">
+      <option name="closed" value="true" />
+      <created>1708113986019</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708113986020</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +233,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init app" />
     <MESSAGE value="Edit README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit README.md" />
+    <MESSAGE value="add display methods" />
+    <MESSAGE value="task2 refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="task2 refactor" />
   </component>
 </project>
