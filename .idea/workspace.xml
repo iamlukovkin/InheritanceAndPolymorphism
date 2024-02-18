@@ -4,27 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bccb4ba7-186e-4392-b80a-94214cbb7d32" name="Changes" comment="task2 refactor">
-      <change afterPath="$PROJECT_DIR$/src/com/task2/behavioral/AppFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/behavioral/MenuView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/creational/MemoryFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bccb4ba7-186e-4392-b80a-94214cbb7d32" name="Changes" comment="task2 menu">
+      <change afterPath="$PROJECT_DIR$/src/com/task2/behavioral/AbstractMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/behavioral/MenuAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/behavioral/PlaylistMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/task2/structural/Inputer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Patterns/StatementFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Area.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/City.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Place.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InheritanceAndPolymorphism/com/lab4/task1/Statement/Region.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Patterns/StatementFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/creational/StatementFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/structural/Area.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/structural/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/structural/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/structural/Place.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/Statement/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/structural/Region.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/behavioral/AppFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/behavioral/MenuView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/creational/MemoryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/creational/MemoryFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/structural/Memory/AbstractMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/structural/Memory/AbstractMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/structural/Memory/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/structural/Memory/Playlist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +77,7 @@
     "ignore_missing_gitignore": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Volumes/Develop/GitHub/InheritanceAndPolymorphism",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -180,6 +172,7 @@
       <workItem from="1707978627737" duration="132000" />
       <workItem from="1708048704016" duration="9522000" />
       <workItem from="1708112770027" duration="2213000" />
+      <workItem from="1708248232306" duration="10136000" />
     </task>
     <task id="LOCAL-00001" summary="Init app">
       <option name="closed" value="true" />
@@ -213,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708113986020</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="task2 refactor">
+      <option name="closed" value="true" />
+      <created>1708248425361</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708248425362</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +236,7 @@
     <MESSAGE value="Edit README.md" />
     <MESSAGE value="add display methods" />
     <MESSAGE value="task2 refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="task2 refactor" />
+    <MESSAGE value="task2 menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="task2 menu" />
   </component>
 </project>

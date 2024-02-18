@@ -51,6 +51,16 @@ abstract public class AbstractMemory {
         return tracks;
     }
 
+    public ArrayList<Album> getAlbumsOrderedByGenre(Genre genre) {
+        ArrayList<Album> returnedAlbums = new ArrayList<>();
+        for (Album album : albums) {
+            if (album.getGenre() == genre) {
+                returnedAlbums.add(album);
+            }
+        }
+        return returnedAlbums;
+    }
+
     public ArrayList<Track> getAllTracks() {
         ArrayList<Track> tracks = new ArrayList<>();
         for (Album album : albums) {
@@ -81,6 +91,14 @@ abstract public class AbstractMemory {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < tracks.size(); i++) {
             result.append(i + 1).append(") ").append(tracks.get(i).toString()).append("\n");
+        }
+        System.out.println(result);
+    }
+
+    public static void displayAlbums(ArrayList<Album> albums) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < albums.size(); i++) {
+            result.append(i + 1).append(") ").append(albums.get(i).toString()).append("\n");
         }
         System.out.println(result);
     }
