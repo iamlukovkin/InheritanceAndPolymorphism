@@ -1,10 +1,8 @@
 package com.task2.structural.Memory;
 
-import com.task2.creational.AudioFactory;
 import com.task2.structural.Audio.Album;
 import com.task2.structural.Audio.Genre;
 import com.task2.structural.Audio.Track;
-import com.task2.structural.Inputer;
 
 import java.util.ArrayList;
 
