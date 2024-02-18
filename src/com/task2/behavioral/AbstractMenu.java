@@ -5,22 +5,33 @@ import com.task2.structural.Audio.Genre;
 import com.task2.structural.Audio.Track;
 import com.task2.structural.Inputer;
 import com.task2.structural.Memory.AbstractMemory;
+import com.task2.structural.Memory.Disk;
+import com.task2.structural.Memory.Playlist;
 
 import java.util.ArrayList;
 
 abstract public class AbstractMenu {
-    private final AbstractMemory userMemory;
+    private static Playlist playlistInstance;
+    private Disk diskInstance;
 
-    public AbstractMenu(AbstractMemory userPlaylist) {
-        this.userMemory = userPlaylist;
+    public AbstractMenu() {
+        playlistInstance = Playlist.getInstance();
+        diskInstance = getDisk();
     }
 
-    public AbstractMemory getUserMemory() {
-        return userMemory;
+    public Disk getDisk() {
+        if (diskInstance == null) {
+            diskInstance = new Disk();
+        }
+        return diskInstance;
+    }
+
+    public Playlist getPlaylist() {
+        return playlistInstance;
     }
 
     public void displayTracks() {
-        ArrayList<Track> tracks = userMemory.getAllTracks();
+        ArrayList<Track> tracks = playlistInstance.getAllTracks();
         if (tracks.isEmpty()) {
             System.out.println("Здесь пусто, но вы можете добавить новые треки и альбомы!");
             return;
@@ -29,7 +40,7 @@ abstract public class AbstractMenu {
     }
 
     public void displayAlbums() {
-        ArrayList<Album> albums = userMemory.getAlbums();
+        ArrayList<Album> albums = playlistInstance.getAlbums();
         if (albums.isEmpty()) {
             System.out.println("Здесь пусто, но вы можете добавить новые альбомы!");
             return;
@@ -44,7 +55,7 @@ abstract public class AbstractMenu {
             if (minDuration > maxDuration) {
                 System.out.println("Минимальное значение длительности трека не может быть больше максимального!");
             } else {
-                ArrayList<Track> tracks = userMemory.getTracksByDurationRange(minDuration, maxDuration);
+                ArrayList<Track> tracks = playlistInstance.getTracksByDurationRange(minDuration, maxDuration);
                 AbstractMemory.displayTracks(tracks);
                 break;
             }
@@ -52,12 +63,12 @@ abstract public class AbstractMenu {
     }
 
     public void orderTracksByGenre() {
-        AbstractMemory.displayTracks(userMemory.getTracksOrderedByGenre());
+        AbstractMemory.displayTracks(playlistInstance.getTracksOrderedByGenre());
     }
 
     public void displayTracksByGenre() {
         Genre genre = Inputer.readGenre();
-        AbstractMemory.displayAlbums(userMemory.getAlbumsOrderedByGenre(genre));
+        AbstractMemory.displayAlbums(playlistInstance.getAlbumsOrderedByGenre(genre));
     }
 
     abstract public void displayMenu();

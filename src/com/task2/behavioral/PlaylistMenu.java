@@ -1,13 +1,20 @@
 package com.task2.behavioral;
 
 import com.task2.structural.Inputer;
-import com.task2.structural.Memory.Playlist;
 
 public class PlaylistMenu extends AbstractMenu {
-    public PlaylistMenu(Playlist userPlaylist) {
-        super(userPlaylist);
+    private static PlaylistMenu instance;
+
+    public PlaylistMenu() {
+        super();
     }
 
+    public static PlaylistMenu getPlaylistMenu() {
+        if (instance == null) {
+            instance = new PlaylistMenu();
+        }
+        return instance;
+    }
 
     @Override
     public void displayMenu() {

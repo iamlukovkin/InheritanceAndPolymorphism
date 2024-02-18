@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bccb4ba7-186e-4392-b80a-94214cbb7d32" name="Changes" comment="task2 menu">
-      <change afterPath="$PROJECT_DIR$/src/com/task2/behavioral/AbstractMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/behavioral/MenuAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/behavioral/PlaylistMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/task2/structural/Inputer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task2/behavioral/AppFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task2/behavioral/MenuView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/behavioral/AbstractMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/behavioral/AbstractMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/behavioral/MenuAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/behavioral/MenuAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/behavioral/PlaylistMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/behavioral/PlaylistMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task2/creational/MemoryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/creational/MemoryFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/structural/Inputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/structural/Inputer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task2/structural/Memory/AbstractMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/structural/Memory/AbstractMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task2/structural/Memory/Disk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/structural/Memory/Disk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task2/structural/Memory/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task2/structural/Memory/Playlist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +171,7 @@
       <workItem from="1707978627737" duration="132000" />
       <workItem from="1708048704016" duration="9522000" />
       <workItem from="1708112770027" duration="2213000" />
-      <workItem from="1708248232306" duration="10136000" />
+      <workItem from="1708248232306" duration="12346000" />
     </task>
     <task id="LOCAL-00001" summary="Init app">
       <option name="closed" value="true" />
@@ -214,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708248425362</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="task2 menu">
+      <option name="closed" value="true" />
+      <created>1708260195332</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708260195336</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

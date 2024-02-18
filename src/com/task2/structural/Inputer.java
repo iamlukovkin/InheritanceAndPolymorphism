@@ -15,6 +15,14 @@ public class Inputer {
         return scan;
     }
 
+    public static String readString(String message) {
+        String value;
+        System.out.println(message);
+        Scanner scanner = getScanner();
+        value = scanner.nextLine();
+        return value;
+    }
+
     public static float readFloat(String message) {
         float value;
         Scanner scanner = getScanner();

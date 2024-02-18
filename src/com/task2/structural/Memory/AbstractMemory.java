@@ -1,8 +1,10 @@
 package com.task2.structural.Memory;
 
+import com.task2.creational.AudioFactory;
 import com.task2.structural.Audio.Album;
 import com.task2.structural.Audio.Genre;
 import com.task2.structural.Audio.Track;
+import com.task2.structural.Inputer;
 
 import java.util.ArrayList;
 
@@ -33,10 +35,6 @@ abstract public class AbstractMemory {
 
     public void addAlbum(Album album) {
         albums.add(album);
-    }
-
-    public void removeAlbum(Album album) {
-        albums.remove(album);
     }
 
     public ArrayList<Track> getTracksOrderedByGenre() {
@@ -107,4 +105,5 @@ abstract public class AbstractMemory {
     public String toString() {
         return "Название: " + name + "\nПродолжительность: " + getDuration() + " мин." + "\nКоличество альбомов: " + albums.size();
     }
+
 }

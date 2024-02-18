@@ -25,14 +25,6 @@ public class Album extends AbstractAudio {
         return albumId;
     }
 
-    public void addTrack(Track track) {
-        tracks.add(track);
-    }
-
-    public void removeTrack(Track track) {
-        tracks.remove(track);
-    }
-
     @Override
     public String toString() {
         return "Название: " + getName() + "\nАвтор: " + getAuthor() + "\nЖанр: " + getGenre() + "\nЧисло треков: " + getTracks().size() + "\nПродолжительность: " + getDuration();

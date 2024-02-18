@@ -1,9 +1,5 @@
 package com.task2.behavioral;
 
-import com.task2.creational.AudioFactory;
-import com.task2.structural.Audio.Genre;
-import com.task2.structural.Inputer;
-
 public enum MenuAction {
     EXIT {
         @Override
@@ -16,6 +12,13 @@ public enum MenuAction {
         @Override
         public String toString() {
             return "Добавить трек";
+        }
+    },
+
+    ADD_ALBUM {
+        @Override
+        public String toString() {
+            return "Добавить альбом";
         }
     },
 
@@ -58,13 +61,6 @@ public enum MenuAction {
         public String toString() {
             return "Записать плейлист в диск";
         }
-    },
-
-    READ_FROM_DISK {
-        @Override
-        public String toString() {
-            return "Считать плейлист из диска";
-        }
     };
 
     public static void execute(int choice, AbstractMenu menu) {
@@ -74,9 +70,9 @@ public enum MenuAction {
                 menu.exit();
                 break;
             case ADD_TRACK:
-                AudioFactory factory = AudioFactory.getInstance();
-                Genre newTrackGenre = Inputer.readGenre();
-                menu.getUserMemory().addAlbum(factory.makeAlbumByGenre(newTrackGenre, 1));
+                menu.getPlaylist().addNewTrack();
+            case ADD_ALBUM:
+                menu.getPlaylist().addNewAlbum();
             case DISPLAY_TRACKS:
                 menu.displayTracks();
                 break;
@@ -92,6 +88,8 @@ public enum MenuAction {
             case ORDER_TRACKS_BY_GENRE:
                 menu.orderTracksByGenre();
                 break;
+            case RECORD_TO_DISK:
+                menu.getPlaylist().recordToDisk(menu.getDisk());
             default:
                 break;
         }

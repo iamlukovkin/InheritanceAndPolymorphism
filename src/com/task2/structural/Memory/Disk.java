@@ -1,18 +1,14 @@
 package com.task2.structural.Memory;
 
-import java.util.ArrayList;
+import com.task2.structural.Inputer;
 
 public class Disk extends AbstractMemory {
-    public Disk(String name) {
-        super(name);
+    public Disk() {
+        super(Inputer.readString("Введите название диска"));
     }
 
     public void recordPlaylist(Playlist playlist) {
         setAlbums(playlist.getAlbums());
-    }
-
-    public void clearAllTracks() {
-        setAlbums(new ArrayList<>());
     }
 
     public String toString() {
