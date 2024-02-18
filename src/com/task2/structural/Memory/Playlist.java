@@ -4,6 +4,8 @@ import com.task2.creational.AudioFactory;
 import com.task2.structural.Audio.Genre;
 import com.task2.structural.Inputer;
 
+import java.util.ArrayList;
+
 public class Playlist extends AbstractMemory {
     private static Playlist instance;
 
@@ -32,6 +34,7 @@ public class Playlist extends AbstractMemory {
 
     public void recordToDisk(Disk disk) {
         disk.recordPlaylist(this);
+        super.setAlbums(new ArrayList<>());
     }
 
     public void addNewTrack() {

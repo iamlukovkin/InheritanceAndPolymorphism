@@ -26,6 +26,8 @@ public class PlaylistMenu extends AbstractMenu {
 
     public void execute() {
         while (true) {
+            System.out.println(getPlaylist().toString());
+            System.out.println(getDisk().toString());
             displayMenu();
             int choice = Inputer.readInt("Выберите действие: ");
             MenuAction.execute(choice, this);
